@@ -56,6 +56,11 @@ npm install
 ```
 
 ### Running the development server:
+To ensure you have the latest code changes, run:
+```
+git pull --rebase
+```
+
 To start the web app, run the command:
 ```
 npm run dev
