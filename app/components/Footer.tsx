@@ -3,7 +3,7 @@ import Logo from "./Logo";
 
 function FooterItems() {
     return (
-        <div>
+        <div className='flex gap-12 items-center'>
             <Link href="/">Home</Link>   
             <Link href="/products">Products & Services</Link>
             <Link href="/about">About Us</Link>
@@ -14,7 +14,7 @@ function FooterItems() {
 
 export default function Footer() {
     return (
-        <footer className="bg-white flex justify-between text-black">
+        <footer className="bg-primary flex justify-between text-white px-10 py-4">
             <Logo />
             <FooterItems />
         </footer>
