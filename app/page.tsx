@@ -1,10 +1,14 @@
 import Image from "next/image";
 import ImageCaptionItem from "./components/ImageCaptionItem";
+import IconHeadingTextItem from "./components/IconHeadingTextItem";
 import WhoWeAreImage from "@/public/home/who-we-are.png";
 import CNCPrecisionMachiningForgingImage from "@/public/home/cnc-precision-machining-forging.png";
 import FrictionMetallurgicalImage from "@/public/home/friction-and-metallurgical.png";
 import FoundrySmeltersimage from "@/public/home/foundry-and-smelters.png";
 import OilGasWeldingRodsOthersImage from "@/public/home/oil-and-gas-welding-rods-others.png";
+import FastServiceIcon from "@/public/home/meter.svg";
+import AsiaMarketIcon from "@/public/home/asia.svg";
+import DirectAccessIcon from "@/public/home/conversation.svg";
 import Button from "./components/Button";
 
 export default function Home() {
@@ -36,6 +40,16 @@ export default function Home() {
             <ImageCaptionItem img={FrictionMetallurgicalImage} alt="Friction and Metallurgical" text="Friction and Metallurgical"/>
             <ImageCaptionItem img={FoundrySmeltersimage} alt="Foundry and Smelters" text="Foundry and Smelters"/>
             <ImageCaptionItem img={OilGasWeldingRodsOthersImage} alt="Oil & Gas, Welding Rods, Others" text="Oil & Gas, Welding Rods, Others"/>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="p-20">
+          <h2 className="uppercase text-center mb-8">Company Services</h2>
+          <div className="grid grid-cols-3 gap-12 text-lg">
+            <IconHeadingTextItem icon={FastServiceIcon} alt="Fast Service" heading="Fast Service" text="We aim to service with consistent delivery and quick response time."/>
+            <IconHeadingTextItem icon={AsiaMarketIcon} alt="Asia Market" heading="Asia Market" text="Our market consist of Malaysia, Singapore, Thailand, Indonesia, Yemen, Korea, China, India, etc."/>
+            <IconHeadingTextItem icon={DirectAccessIcon} alt="Direct Access" heading="Direct Access" text="Feel free to contact us through email or phone number."/>
           </div>
         </div>
       </section>
