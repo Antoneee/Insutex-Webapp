@@ -30,10 +30,13 @@ body {
     font: inherit;
     vertical-align: baseline;
   }
+  h1 {
+    @apply text-6xl font-extrabold text-primary;
+  }
   h2 {
-    @apply text-2xl font-semibold text-primary;
+    @apply text-3xl font-semibold text-primary;
   }
   p {
-    @apply text-base text-neutral-black;
+    @apply text-neutral-black;
   }
 }

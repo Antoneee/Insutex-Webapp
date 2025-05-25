@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        hero: "url('/home/hero.png')"
+      },
       colors: {
         primary: {
           DEFAULT: "#0D016F",
