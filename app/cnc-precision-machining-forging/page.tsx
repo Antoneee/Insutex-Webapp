@@ -1,11 +1,11 @@
 import type { StaticImageData } from 'next/image';
 import ImageTextOverlayCard from "../components/ImageTextOverlayCard";
-import CopperImage from "@/public/cnc-precision-machining-forging/copper.png";
-import BronzeImage from "@/public/cnc-precision-machining-forging/bronze.png";
-import BrassImage from "@/public/cnc-precision-machining-forging/brass.png";
-import StainlessSteelImage from "@/public/cnc-precision-machining-forging/stainless-steel.png";
-import FreeCuttingSteelImage from "@/public/cnc-precision-machining-forging/free-cutting-steel.png";
-import AluminumImage from "@/public/cnc-precision-machining-forging/aluminium.png";
+import CopperCardImage from "@/public/cnc-precision-machining-forging/copper-card.png";
+import BronzeCardImage from "@/public/cnc-precision-machining-forging/bronze-card.png";
+import BrassCardImage from "@/public/cnc-precision-machining-forging/brass-card.png";
+import StainlessSteelCardImage from "@/public/cnc-precision-machining-forging/stainless-steel-card.png";
+import FreeCuttingSteelCardImage from "@/public/cnc-precision-machining-forging/free-cutting-steel-card.png";
+import AluminiumCardImage from "@/public/cnc-precision-machining-forging/aluminium-card.png";
 import Link from "next/link";
 
 type CNCPrecisionMachiningForgingCardProps = {
@@ -45,14 +45,22 @@ export default function CNCPrecisionMachiningForging() {
                 </div>
             </section>
             <section>
+                {/* 
+                👉 To add a new metal card:
+                1. Copy one of the <CNCPrecisionMachiningForgingCard /> lines below.
+                2. Paste it on a new line within the <div className="grid ..."> block.
+                3. Change the `href` to the correct link (e.g. "/titanium").
+                4. Change the `backgroundImg` to the image you want to use.
+                5. Change the `alt` text and `overlayText` to match the new metal.
+                */}
                 <div className="w-10/12 mx-auto mb-48">
                     <div className="grid grid-cols-3 gap-6">
-                        <CNCPrecisionMachiningForgingCard href="/copper" backgroundImg={CopperImage} alt="Copper material" overlayText="Copper"/>
-                        <CNCPrecisionMachiningForgingCard href="/bronze" backgroundImg={BronzeImage} alt="Bronze material" overlayText="Bronze"/>
-                        <CNCPrecisionMachiningForgingCard href="/brass" backgroundImg={BrassImage} alt="Brass material" overlayText="Brass"/>
-                        <CNCPrecisionMachiningForgingCard href="/stainless-steel" backgroundImg={StainlessSteelImage} alt="Stainless steel material" overlayText="Stainless Steel"/>
-                        <CNCPrecisionMachiningForgingCard href="/free-cutting-steel" backgroundImg={FreeCuttingSteelImage} alt="Free cutting, alloy, and carbon steel material material" overlayText="Free Cutting, Alloy, & Carbon Steel"/>
-                        <CNCPrecisionMachiningForgingCard href="/aluminium" backgroundImg={AluminumImage} alt="Aluminium material" overlayText="Aluminium"/>
+                        <CNCPrecisionMachiningForgingCard href="/copper" backgroundImg={CopperCardImage} alt="Copper material" overlayText="Copper"/>
+                        <CNCPrecisionMachiningForgingCard href="/bronze" backgroundImg={BronzeCardImage} alt="Bronze material" overlayText="Bronze"/>
+                        <CNCPrecisionMachiningForgingCard href="/brass" backgroundImg={BrassCardImage} alt="Brass material" overlayText="Brass"/>
+                        <CNCPrecisionMachiningForgingCard href="/stainless-steel" backgroundImg={StainlessSteelCardImage} alt="Stainless steel material" overlayText="Stainless Steel"/>
+                        <CNCPrecisionMachiningForgingCard href="/free-cutting-steel" backgroundImg={FreeCuttingSteelCardImage} alt="Free cutting, alloy, and carbon steel material material" overlayText="Free Cutting, Alloy, & Carbon Steel"/>
+                        <CNCPrecisionMachiningForgingCard href="/aluminium" backgroundImg={AluminiumCardImage} alt="Aluminium material" overlayText="Aluminium"/>
                     </div>
                 </div>
             </section>

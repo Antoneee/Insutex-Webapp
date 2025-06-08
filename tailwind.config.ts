@@ -10,7 +10,12 @@ export default {
     extend: {
       backgroundImage: {
         home: "url('/home/hero.png')",
-        about: "url('/about/hero.png')"
+        about: "url('/about/hero.png')",
+        copper: "url('/cnc-precision-machining-forging/copper/hero.png')",
+        brass: "url('/cnc-precision-machining-forging/brass/hero.png')",
+        aluminium: "url('/cnc-precision-machining-forging/aluminium/hero.png')",
+        "free-cutting-steel": "url('/cnc-precision-machining-forging/free-cutting-steel/hero.png')",
+        "stainless-steel": "url('/cnc-precision-machining-forging/stainless-steel/hero.png')",
       },
       colors: {
         primary: {
