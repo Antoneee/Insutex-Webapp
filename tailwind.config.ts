@@ -11,6 +11,7 @@ export default {
       backgroundImage: {
         home: "url('/home/hero.png')",
         about: "url('/about/hero.png')",
+        contact: "url('/contact/hero.png')",
         copper: "url('/cnc-precision-machining-forging/copper/hero.png')",
         brass: "url('/cnc-precision-machining-forging/brass/hero.png')",
         aluminium: "url('/cnc-precision-machining-forging/aluminium/hero.png')",

@@ -8,7 +8,9 @@ function NavItems() {
             <Link href="/">Home</Link>   
             <Link href="/products">Products & Services</Link>
             <Link href="/about">About Us</Link>
-            <Button bgColor="bg-accent text-neutral-white">Contact</Button>
+            <Link href="/contact">
+                <Button bgColor="bg-accent text-neutral-white">Contact</Button>
+            </Link>
         </div>
     );
 }
