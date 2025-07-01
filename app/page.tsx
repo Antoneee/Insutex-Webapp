@@ -43,7 +43,9 @@ export default function Home() {
               <ImageCaptionItem img={CNCPrecisionMachiningForgingImage} alt="CNC, Precision Machining, Forging" text="CNC, Precision Machining, Forging"/>
             </Link>
             <ImageCaptionItem img={FrictionMetallurgicalImage} alt="Friction and Metallurgical" text="Friction and Metallurgical"/>
-            <ImageCaptionItem img={FoundrySmeltersimage} alt="Foundry and Smelters" text="Foundry and Smelters"/>
+            <Link href="/foundry-and-smelters">
+              <ImageCaptionItem img={FoundrySmeltersimage} alt="Foundry and Smelters" text="Foundry and Smelters"/>
+            </Link>
             <ImageCaptionItem img={OilGasWeldingRodsOthersImage} alt="Oil & Gas, Welding Rods, Others" text="Oil & Gas, Welding Rods, Others"/>
           </div>
         </div>

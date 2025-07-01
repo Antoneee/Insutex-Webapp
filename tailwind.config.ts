@@ -21,6 +21,7 @@ export default {
       colors: {
         primary: {
           DEFAULT: "#0D016F",
+          medium: "#0D016F14",
           light: "#0D016F1A"
         },
         accent: {
