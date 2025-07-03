@@ -1,6 +1,6 @@
 import Image from "next/image";
 import type { StaticImageData } from 'next/image';
-import AlliedMaterialLogo from '@/public/foundry-and-smelters/allied-mineral-logo.png';
+import AlliedMineralLogo from '@/public/foundry-and-smelters/allied-mineral-logo.png';
 import AlleasturLogo from '@/public/foundry-and-smelters/alleastur-logo.png';
 import AsburyLogo from '@/public/foundry-and-smelters/asbury-logo.png';
 import SeowonLogo from '@/public/foundry-and-smelters/seowon-logo.png';
@@ -58,7 +58,7 @@ export default function FoundryAndSmelters() {
             <section>
                 <div className="flex flex-col gap-8 mb-32">
                     <div className="flex justify-center gap-8">
-                        <Card img={AlliedMaterialLogo} alt="Allied Material logo" href="allied-material" title="Allied Material" 
+                        <Card img={AlliedMineralLogo} alt="Allied Mineral logo" href="allied-mineral" title="Allied Mineral" 
                         items={["Monolithic refractory ceramics", "Providing top quality refractories and precast shapes."]}/>
 
                         <Card img={AlleasturLogo} alt="Alleastur logo" href="alleastur" title="Alleastur" 
