@@ -3,7 +3,7 @@ import ImageCaptionItem from "./components/ImageCaptionItem";
 import IconHeadingTextItem from "./components/IconHeadingTextItem";
 import WhoWeAreImage from "@/public/home/who-we-are.png";
 import CNCPrecisionMachiningForgingImage from "@/public/home/cnc-precision-machining-forging.png";
-import FrictionMetallurgicalImage from "@/public/home/friction-and-metallurgical.png";
+import FrictionMetallurgicalMaterialsImage from "@/public/home/friction-and-metallurgical-materials.png";
 import FoundrySmeltersimage from "@/public/home/foundry-and-smelters.png";
 import OilGasWeldingRodsOthersImage from "@/public/home/oil-and-gas-welding-rods-others.png";
 import FastServiceIcon from "@/public/home/meter.svg";
@@ -42,7 +42,9 @@ export default function Home() {
             <Link href="/cnc-precision-machining-forging">
               <ImageCaptionItem img={CNCPrecisionMachiningForgingImage} alt="CNC, Precision Machining, Forging" text="CNC, Precision Machining, Forging"/>
             </Link>
-            <ImageCaptionItem img={FrictionMetallurgicalImage} alt="Friction and Metallurgical" text="Friction and Metallurgical"/>
+            <Link href="/friction-and-metallurgical-materials">
+              <ImageCaptionItem img={FrictionMetallurgicalMaterialsImage} alt="Friction and Metallurgical Materials" text="Friction and Metallurgical Materials"/>
+            </Link>
             <Link href="/foundry-and-smelters">
               <ImageCaptionItem img={FoundrySmeltersimage} alt="Foundry and Smelters" text="Foundry and Smelters"/>
             </Link>
