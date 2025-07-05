@@ -5,7 +5,6 @@ import WhoWeAreImage from "@/public/home/who-we-are.png";
 import CNCPrecisionMachiningForgingImage from "@/public/home/cnc-precision-machining-forging.png";
 import FrictionMetallurgicalMaterialsImage from "@/public/home/friction-and-metallurgical-materials.png";
 import FoundrySmeltersimage from "@/public/home/foundry-and-smelters.png";
-import OilGasWeldingRodsOthersImage from "@/public/home/oil-and-gas-welding-rods-others.png";
 import FastServiceIcon from "@/public/home/meter.svg";
 import AsiaMarketIcon from "@/public/home/asia.svg";
 import DirectAccessIcon from "@/public/home/conversation.svg";
@@ -36,9 +35,9 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <div className="bg-primary-light p-20">
+        <div className="bg-primary-light px-40 py-20">
           <h2 className="uppercase text-center mb-8">Industries We Serve</h2>
-          <div className="grid grid-cols-4 gap-36 text-lg">
+          <div className="grid grid-cols-3 gap-48 text-lg">
             <Link href="/cnc-precision-machining-forging">
               <ImageCaptionItem img={CNCPrecisionMachiningForgingImage} alt="CNC, Precision Machining, Forging" text="CNC, Precision Machining, Forging"/>
             </Link>
@@ -48,7 +47,6 @@ export default function Home() {
             <Link href="/foundry-and-smelters">
               <ImageCaptionItem img={FoundrySmeltersimage} alt="Foundry and Smelters" text="Foundry and Smelters"/>
             </Link>
-            <ImageCaptionItem img={OilGasWeldingRodsOthersImage} alt="Oil & Gas, Welding Rods, Others" text="Oil & Gas, Welding Rods, Others"/>
           </div>
         </div>
       </section>
