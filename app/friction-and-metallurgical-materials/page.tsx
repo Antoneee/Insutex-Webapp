@@ -23,13 +23,13 @@ export default function FrictionAndMetallurgical() {
             <section>
                 <div className="flex gap-20 mb-24 px-20">
                     <div className="w-1/2 overflow-hidden rounded-lg">
-                        <Image src={GraphitePowderImage} alt="Graphite power image" className="w-full"/>
+                        <Image src={GraphitePowderImage} alt="Graphite powder image" className="w-full"/>
                     </div>
                     <div className="w-1/2">
-                        <h2 className="text-4xl mb-6">Graphite Products (Asbury Carbons)</h2>
+                        <h2 className="text-4xl mb-6">Graphite Materials (Asbury Carbons)</h2>
                         <p className="mb-16">
                             We’re the exclusive distributor of {" "}
-                            <Link href={`friction-and-metallurgical-materials/graphite-powder`}>
+                            <Link href={`friction-and-metallurgical-materials/graphite-materials`}>
                                 <b className="text-primary">Asbury Carbons</b>
                             </Link>
                             , a global leader in carbon materials. Their graphite is trusted for high-performance friction and foundry applications.
@@ -42,7 +42,7 @@ export default function FrictionAndMetallurgical() {
                             <li>Specialty Cokes</li>
                             <li>More available on request</li>                        
                         </ul>
-                        <Link href={`friction-and-metallurgical-materials/graphite-powder`}>
+                        <Link href={`friction-and-metallurgical-materials/graphite-materials`}>
                             <Button bgColor="bg-primary text-neutral-white">Learn More</Button>
                         </Link>
                     </div>

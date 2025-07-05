@@ -17,7 +17,8 @@ export default {
         aluminium: "url('/cnc-precision-machining-forging/aluminium/hero.png')",
         "free-cutting-steel": "url('/cnc-precision-machining-forging/free-cutting-steel/hero.png')",
         "stainless-steel": "url('/cnc-precision-machining-forging/stainless-steel/hero.png')",
-        "allied-mineral": "url('/foundry-and-smelters/allied-mineral/hero.png')"
+        "allied-mineral": "url('/foundry-and-smelters/allied-mineral/hero.png')",
+        "graphite-materials": "url('/friction-and-metallurgical-materials/graphite-materials/hero.png')",
       },
       colors: {
         primary: {
@@ -26,7 +27,8 @@ export default {
           light: "#0D016F1A"
         },
         accent: {
-          DEFAULT: "#FF1901"
+          DEFAULT: "#FF1901",
+          light: "#FF19011A"
         },
         neutral: {
           white: "#FFFFFF",

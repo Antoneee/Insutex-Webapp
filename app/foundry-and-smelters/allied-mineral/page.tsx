@@ -29,6 +29,7 @@ export default function AlliedMineral() {
                     <h1 className="relative text-neutral-white mt-20 z-10">Monolithic Refractory Ceramics</h1>
                 </div>
             </section>
+            <section>
                 <div className="flex px-20 mb-20">
                     <div className="w-1/3 flex items-center">
                         <Image src={AlliedMineralLogo} alt="Allied Mineral logo"/>
@@ -43,6 +44,7 @@ export default function AlliedMineral() {
                         </p>
                     </div>
                 </div>
+            </section>
             <section>
                 <div className="flex px-20 mb-20">
                     <div className="w-2/5">
