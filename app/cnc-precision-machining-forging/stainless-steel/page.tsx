@@ -1,5 +1,5 @@
 import FormsAvailable from "@/app/components/FormsAvailable";
-import AutoImageCarousel from "@/app/components/AutoImageCarousel";
+import ImageCarousel from "@/app/components/ImageCarousel";
 import image1 from "@/public/cnc-precision-machining-forging/stainless-steel/carousel/1.png";
 import image2 from "@/public/cnc-precision-machining-forging/stainless-steel/carousel/2.png";
 import image3 from "@/public/cnc-precision-machining-forging/stainless-steel/carousel/3.png";
@@ -61,7 +61,7 @@ export default function StainlessSteel() {
             <section>
                 <div className="px-20 flex gap-x-20 mb-20">
                     <div className="w-1/2">
-                        <AutoImageCarousel images={images} interval={7500}/>
+                        <ImageCarousel images={images} interval={7500}/>
                     </div>
                     <div className="w-1/2">
                         <h2 className="mb-3">Stainless Steel</h2>

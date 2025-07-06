@@ -1,4 +1,4 @@
-import ImageCarousel from "@/app/components/AutoImageCarousel";
+import ImageCarousel from "@/app/components/ImageCarousel";
 import Button from "@/app/components/Button";
 import image1 from "@/public/friction-and-metallurgical-materials/other-materials/carousel/1.png";
 import image2 from "@/public/friction-and-metallurgical-materials/other-materials/carousel/2.png";
