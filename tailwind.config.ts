@@ -19,6 +19,7 @@ export default {
         "stainless-steel": "url('/cnc-precision-machining-forging/stainless-steel/hero.png')",
         "allied-mineral": "url('/foundry-and-smelters/allied-mineral/hero.png')",
         "graphite-materials": "url('/friction-and-metallurgical-materials/graphite-materials/hero.png')",
+        "other-materials": "url('/friction-and-metallurgical-materials/other-materials/hero.png')",
       },
       colors: {
         primary: {
