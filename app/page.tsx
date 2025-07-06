@@ -14,10 +14,13 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main>
-      <section>
+      <section className="relative">
         <div className="bg-home bg-cover bg-center p-20">
-          <h1 className="text-neutral-white mt-20">Insutex Industries Sdn. BhD.</h1>
-          <p className="text-3xl text-neutral-white">Moving Goods, Growing Partnerships</p>
+          <div className="relative z-10">
+            <h1 className="mt-20 text-neutral-white">Insutex Industries Sdn. BhD.</h1>
+            <p className="text-3xl text-neutral-white">Moving Goods, Growing Partnerships</p>
+          </div>
+          <div className="bg-black/45 w-full h-full absolute inset-0"></div>
         </div>
       </section>
       <section>

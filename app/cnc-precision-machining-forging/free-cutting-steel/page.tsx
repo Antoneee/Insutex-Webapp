@@ -51,7 +51,7 @@ export default function FreeCuttingSteel() {
                     Slightly darken background to make heading more readable.
                     If you want to adjust darkness/brightness change number in "bg-black/<NUMBER>" in div below.
                     */}
-                    <div className="absolute inset-0 bg-black/20 z-0" />
+                    <div className="absolute inset-0 bg-black/45 z-0" />
                     <h1 className="relative text-neutral-white mt-20 z-10">Free Cutting, Alloy, & Carbon Steel</h1>
                 </div>
             </section>

@@ -10,8 +10,8 @@ type HeadingBulletedListProps = {
 function HeadingBulletedList({heading, items}: HeadingBulletedListProps) {
     return (
         <>
-            <h3 className="uppercase text-primary font-semibold text-lg">{heading}</h3>
-            <ul className="list-disc list-inside mb-6">
+            <h3 className="uppercase text-primary font-semibold text-xl">{heading}</h3>
+            <ul className="list-disc list-inside mb-6 text-lg">
                 {items.map((item, i) => (
                     <li key={i}>{item}</li>
                 ))}
@@ -23,10 +23,11 @@ function HeadingBulletedList({heading, items}: HeadingBulletedListProps) {
 export default function AlliedMineral() {
     return (
         <main>
-            <section>
+            <section className="relative">
                 <div className="relative bg-allied-mineral bg-cover bg-center p-20 mb-20">
                     <div className="absolute inset-0 bg-black/20 z-0" />
                     <h1 className="relative text-neutral-white mt-20 z-10">Monolithic Refractory Ceramics</h1>
+                    <div className="bg-black/45 w-full h-full absolute inset-0"></div>
                 </div>
             </section>
             <section>
@@ -35,7 +36,7 @@ export default function AlliedMineral() {
                         <Image src={AlliedMineralLogo} alt="Allied Mineral logo"/>
                     </div>
                     <div className="w-2/3">
-                        <p>
+                        <p className="text-lg">
                             Allied Mineral Products is a world leader in the design and manufacture of monolithic refractories and precast shapes for more than 60 years. With strong sales and service teams in the foundry, aluminum, steel, heat treat/forge and industrial markets, our success is based on our dedication to Being There Worldwide with Refractory Solutions.
                             <br/>
                             <br/>

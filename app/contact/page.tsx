@@ -20,9 +20,10 @@ export default function Contact() {
 
     return (
         <main>
-            <section>
+            <section className="relative">
                 <div className="bg-contact bg-cover bg-center p-20 text-center">
-                    <h1 className="text-neutral-white my-10">Contact Us</h1>
+                    <h1 className="text-neutral-white my-10 relative z-10">Contact Us</h1>
+                    <div className="bg-black/45 w-full h-full absolute inset-0"></div>
                 </div>
             </section>
             <section>

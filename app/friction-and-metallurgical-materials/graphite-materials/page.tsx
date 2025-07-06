@@ -30,11 +30,12 @@ function HeadingCheckList({heading, items}: HeadingCheckListProps) {
 export default function GraphiteMaterials() {
     return (
         <main>
-            <section>
+            <section className="relative">
                 <div className="relative bg-graphite-materials bg-cover bg-center p-20">
                     <div className="absolute inset-0 bg-black/20 z-0" />
                     <h1 className="relative text-neutral-white mt-20 z-10">Graphite Materials</h1>
                 </div>
+                <div className="bg-black/45 w-full h-full absolute inset-0"></div>
             </section>
             <section>
                 <div className="flex px-40 py-20 gap-32">

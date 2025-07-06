@@ -4,9 +4,10 @@ import HistoryImage from "@/public/about/history.png";
 export default function About() {
     return (
         <main>
-            <section>
+            <section className="relative">
                 <div className="bg-about bg-cover bg-center p-20 text-center">
-                    <h1 className="text-neutral-white my-10">About Us</h1>
+                    <h1 className="text-neutral-white my-10 relative z-10">About Us</h1>
+                    <div className="bg-black/45 w-full h-full absolute inset-0"></div>
                 </div>
             </section>
             <section>
