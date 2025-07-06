@@ -13,6 +13,7 @@ export default {
         about: "url('/about/hero.png')",
         contact: "url('/contact/hero.png')",
         copper: "url('/cnc-precision-machining-forging/copper/hero.png')",
+        bronze: "url('/cnc-precision-machining-forging/bronze/hero.png')",
         brass: "url('/cnc-precision-machining-forging/brass/hero.png')",
         aluminium: "url('/cnc-precision-machining-forging/aluminium/hero.png')",
         "free-cutting-steel": "url('/cnc-precision-machining-forging/free-cutting-steel/hero.png')",
