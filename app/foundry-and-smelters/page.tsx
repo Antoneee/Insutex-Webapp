@@ -32,7 +32,7 @@ function Card({img, alt, href, title, items}: CardProps) {
                     ))}
                 </ul>
             </div>
-                <Link href={`foundry-and-smelters/${href}`}>
+                <Link href={href}>
                     <Button bgColor="bg-primary text-neutral-white block mx-auto">Learn More</Button>
                 </Link>
         </div>
@@ -58,20 +58,20 @@ export default function FoundryAndSmelters() {
             <section>
                 <div className="flex flex-col gap-8 mb-32">
                     <div className="flex justify-center gap-8">
-                        <Card img={AlliedMineralLogo} alt="Allied Mineral logo" href="allied-mineral" title="Allied Mineral" 
+                        <Card img={AlliedMineralLogo} alt="Allied Mineral logo" href="foundry-and-smelters/allied-mineral" title="Allied Mineral" 
                         items={["Monolithic refractory ceramics", "Providing top quality refractories and precast shapes."]}/>
 
-                        <Card img={AlleasturLogo} alt="Alleastur logo" href="alleastur" title="Alleastur" 
+                        <Card img={AlleasturLogo} alt="Alleastur logo" href="foundry-and-smelters/alleastur" title="Alleastur" 
                         items={["Leading company in production of grain refiners and master alloys"]}/>
 
-                        <Card img={AsburyLogo} alt="Asbury logo" href="asbury" title="Asbury" 
+                        <Card img={AsburyLogo} alt="Asbury logo" href="friction-and-metallurgical-materials/graphite-materials" title="Asbury" 
                         items={["Leading company in natural and synthetic graphite, raw materials and other carbon products"]}/>
                     </div>
                     <div className="flex justify-center gap-8">
-                        <Card img={SeowonLogo} alt="Seowon logo" href="seowon" title="Seowon" 
+                        <Card img={SeowonLogo} alt="Seowon logo" href="foundry-and-smelters/seowon" title="Seowon" 
                         items={["Brass & Bronze Ingot", "Seowon is a specialized manufacturer of non-ferrous metals"]}/>
 
-                        <Card img={InsutexLogo} alt="Insutex logo" href="insutex" title="Insutex Industries Sdn. BhD." 
+                        <Card img={InsutexLogo} alt="Insutex logo" href="foundry-and-smelters/insutex" title="Insutex Industries Sdn. BhD." 
                         items={["Aluminium", "Smelter", "Consumable", "Mouldable", "Coating", "Foundry Flux"]}/>
                     </div>
                 </div>

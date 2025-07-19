@@ -24,14 +24,14 @@ export default function AlliedMineral() {
     return (
         <main>
             <section className="relative">
-                <div className="relative bg-allied-mineral bg-cover bg-center p-20 mb-20">
+                <div className="relative bg-allied-mineral bg-cover bg-center px-40 py-20 mb-20">
                     <div className="absolute inset-0 bg-black/20 z-0" />
                     <h1 className="relative text-neutral-white mt-20 z-10">Monolithic Refractory Ceramics</h1>
                     <div className="bg-black/45 w-full h-full absolute inset-0"></div>
                 </div>
             </section>
             <section>
-                <div className="flex px-20 mb-20">
+                <div className="flex px-40 mb-20">
                     <div className="w-1/3 flex items-center">
                         <Image src={AlliedMineralLogo} alt="Allied Mineral logo"/>
                     </div>
@@ -47,7 +47,7 @@ export default function AlliedMineral() {
                 </div>
             </section>
             <section>
-                <div className="flex px-20 mb-20">
+                <div className="flex px-40 mb-20">
                     <div className="w-2/5">
                         <HeadingBulletedList heading="Products" items={[
                             "Coreless furnace", 

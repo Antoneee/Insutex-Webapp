@@ -9,14 +9,14 @@ export default function Insutex() {
     return (
         <main>
             <section className="relative">
-                <div className="relative bg-insutex bg-cover bg-center p-20 mb-10">
+                <div className="relative bg-insutex bg-cover bg-center px-40 py-20 mb-10">
                     <div className="absolute inset-0 bg-black/20 z-0" />
                     <h1 className="relative text-neutral-white mt-20 z-10">Aluminium Smelter Consumable</h1>
                     <div className="bg-black/45 w-full h-full absolute inset-0"></div>
                 </div>
             </section>
             <section>
-                <div className="px-20 mb-10 text-md text-primary">
+                <div className="px-40 mb-10 text-md text-primary">
                     <span>
                         <Link href={"/"}>Insutex Industries</Link>
                     </span>
@@ -31,9 +31,11 @@ export default function Insutex() {
                 </div>
             </section>
             <section>
-                <div className="flex gap-20 mb-24 px-20">
-                    <div className="w-1/2 overflow-hidden rounded-lg">
-                        <Image src={MoldableImage} alt="Moldable image" className="w-full h-full"/>
+                <div className="flex items-center gap-20 mb-24 px-40">
+                    <div className="w-1/2">
+                        <div className="overflow-hidden rounded-lg">
+                            <Image src={MoldableImage} alt="Moldable image" className="w-full h-full"/>
+                        </div>
                     </div>
                     <div className="w-1/2 text-lg">
                         <h2 className="text-4xl mb-6">Moldable</h2>
@@ -41,7 +43,7 @@ export default function Insutex() {
                             Used extensively in the aluminium industry, our ceramic fibrous viscous paste is engineered for sealing, insulating, and protecting equipment exposed to extreme temperatures and molten metal.
                         </p>
                         <h3 className="text-primary font-semibold text-xl">Applications</h3>
-                        <ul className="list-disc list-inside mb-4">
+                        <ul className="list-disc list-inside mb-8">
                             <li>Launders</li>
                             <li>Furnace doors</li>
                             <li>Tundish systems</li>
@@ -58,14 +60,14 @@ export default function Insutex() {
                 </div>
             </section>
             <section>
-                <div className="flex gap-20 mb-20 p-20 bg-primary-light">
+                <div className="flex items-center gap-20 mb-20 px-40 py-20 bg-primary-light">
                     <div className="w-1/2 text-lg">
                         <h2 className="text-4xl mb-6">Protective Coatings</h2>
                         <p className="mb-8">
                             Our specialised coatings shield aluminium smelter equipment from corrosion, erosion, and chemical attack caused by molten aluminium and slags.
                         </p>
                         <h3 className="text-primary font-semibold text-xl">Applications</h3>
-                        <ul className="list-disc list-inside mb-4">
+                        <ul className="list-disc list-inside mb-8">
                             <li>Pots</li>
                             <li>Launders</li>
                             <li>Furnace components</li>
@@ -78,15 +80,19 @@ export default function Insutex() {
                             <li>Improves metal purity and operational safety</li>
                         </ul>
                     </div>
-                    <div className="w-1/2 overflow-hidden rounded-lg shadow-xl">
-                        <Image src={CoatingImage} alt="Coating image" className="w-full h-full"/>
+                    <div className="w-1/2">
+                        <div className="overflow-hidden rounded-lg shadow-xl">
+                            <Image src={CoatingImage} alt="Coating image" className="w-full h-full"/>
+                        </div>
                     </div>
                 </div>
             </section>
             <section>
-                <div className="flex gap-20 mb-24 px-20">
-                    <div className="w-1/2 overflow-hidden rounded-lg">
-                        <Image src={FoundryFluxesmage} alt="Foundry fluxes image" className="w-full h-full"/>
+                <div className="flex items-center gap-20 mb-24 px-40">
+                    <div className="w-1/2">
+                        <div className="overflow-hidden rounded-lg">
+                            <Image src={FoundryFluxesmage} alt="Foundry fluxes image" className="w-full h-full"/>
+                        </div>
                     </div>
                     <div className="w-1/2 text-lg">
                         <h2 className="text-4xl mb-6">Foundry Fluxes</h2>
@@ -94,7 +100,7 @@ export default function Insutex() {
                             Essential in aluminium melting, our fluxes are formulated to remove impurities, prevent oxidation, and enhance metal quality.
                         </p>
                         <h3 className="text-primary font-semibold text-xl">Types</h3>
-                        <ul className="list-disc list-inside mb-4">
+                        <ul className="list-disc list-inside mb-8">
                             <li>Drossing</li>
                             <li>Covering</li>
                             <li>Refining</li>
@@ -111,14 +117,14 @@ export default function Insutex() {
                 </div>
             </section>
             <section>
-                <div className="flex gap-20 p-20 bg-primary-light">
+                <div className="flex items-center gap-20 px-40 py-20 bg-primary-light">
                     <div className="w-1/2 text-lg">
                         <h2 className="text-4xl mb-6">Magnesium Ingots (99%)</h2>
                         <p className="mb-8">
                             High-purity magnesium is a crucial additive in aluminium smelting and alloying processes, enhancing both material properties and refining outcomes.
                         </p>
                         <h3 className="text-primary font-semibold text-xl">Applications</h3>
-                        <ul className="list-disc list-inside mb-4">
+                        <ul className="list-disc list-inside mb-8">
                             <li>Alloying to enhance strength, corrosion resistance, and weldability</li>
                             <li>Refining agent for removing calcium and lithium</li>
                             <li>Microstructure modification for better casting performance</li>
@@ -130,8 +136,10 @@ export default function Insutex() {
                             <li>Reliable performance in demanding smelting conditions</li>
                         </ul>
                     </div>
-                    <div className="w-1/2 overflow-hidden rounded-lg">
-                        <Image src={MagnesiumIngotsImage} alt="Magnesium ingots image" className="w-full h-full"/>
+                    <div className="w-1/2">
+                        <div className="overflow-hidden rounded-lg">
+                            <Image src={MagnesiumIngotsImage} alt="Magnesium ingots image" className="w-full h-full"/>
+                        </div>
                     </div>
                 </div>
             </section>
