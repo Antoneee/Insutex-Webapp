@@ -19,6 +19,7 @@ export default {
         "free-cutting-steel": "url('/cnc-precision-machining-forging/free-cutting-steel/hero.png')",
         "stainless-steel": "url('/cnc-precision-machining-forging/stainless-steel/hero.png')",
         "allied-mineral": "url('/foundry-and-smelters/allied-mineral/hero.png')",
+        "aleastur": "url('/foundry-and-smelters/aleastur/hero.png')",
         seowon: "url('/foundry-and-smelters/seowon/hero.png')",
         insutex: "url('/foundry-and-smelters/insutex/hero.png')",
         "graphite-materials": "url('/friction-and-metallurgical-materials/graphite-materials/hero.png')",
@@ -41,6 +42,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      height: {
+        '104': '26rem',
+      }
     },
   },
   plugins: [],

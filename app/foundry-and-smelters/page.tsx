@@ -1,7 +1,7 @@
 import Image from "next/image";
 import type { StaticImageData } from 'next/image';
 import AlliedMineralLogo from '@/public/foundry-and-smelters/allied-mineral-logo.png';
-import AlleasturLogo from '@/public/foundry-and-smelters/alleastur-logo.png';
+import AleasturLogo from '@/public/foundry-and-smelters/aleastur-logo.png';
 import AsburyLogo from '@/public/foundry-and-smelters/asbury-logo.png';
 import SeowonLogo from '@/public/foundry-and-smelters/seowon-logo.png';
 import InsutexLogo from '@/public/foundry-and-smelters/insutex-logo.png';
@@ -61,7 +61,7 @@ export default function FoundryAndSmelters() {
                         <Card img={AlliedMineralLogo} alt="Allied Mineral logo" href="foundry-and-smelters/allied-mineral" title="Allied Mineral" 
                         items={["Monolithic refractory ceramics", "Providing top quality refractories and precast shapes."]}/>
 
-                        <Card img={AlleasturLogo} alt="Alleastur logo" href="foundry-and-smelters/alleastur" title="Alleastur" 
+                        <Card img={AleasturLogo} alt="Aleastur logo" href="foundry-and-smelters/aleastur" title="Aleastur" 
                         items={["Leading company in production of grain refiners and master alloys"]}/>
 
                         <Card img={AsburyLogo} alt="Asbury logo" href="friction-and-metallurgical-materials/graphite-materials" title="Asbury" 
