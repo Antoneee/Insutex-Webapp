@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 
 type ImageCarouselProps = {
@@ -20,19 +20,19 @@ export default function ImageCarousel({
     const [currentIndex, setCurrentIndex] = useState(0);
     const timerRef = useRef<NodeJS.Timeout | null>(null);
 
-    const resetTimer = () => {
+    const resetTimer = useCallback(() => {
         if (timerRef.current) clearInterval(timerRef.current);
         timerRef.current = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
         }, interval);
-    };
+    }, [interval, images.length]);
 
     useEffect(() => {
         resetTimer();
         return () => {
             if (timerRef.current) clearInterval(timerRef.current);
         };
-    }, [images.length, interval, resetTimer]);
+    }, [resetTimer]);
 
     const goToPrevious = () => {
         setCurrentIndex((prevIndex) =>
