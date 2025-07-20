@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ImageCarousel from "@/app/components/ImageCarousel";
 import image1 from "@/public/cnc-precision-machining-forging/bronze/carousel/1.png";
 import image2 from "@/public/cnc-precision-machining-forging/bronze/carousel/2.png";

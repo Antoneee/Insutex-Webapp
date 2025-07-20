@@ -32,7 +32,7 @@ export default function ImageCarousel({
         return () => {
             if (timerRef.current) clearInterval(timerRef.current);
         };
-    }, [images.length, interval]);
+    }, [images.length, interval, resetTimer]);
 
     const goToPrevious = () => {
         setCurrentIndex((prevIndex) =>

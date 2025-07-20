@@ -4,7 +4,6 @@ import image1 from "@/public/foundry-and-smelters/aleastur/carousel/1.png";
 import image2 from "@/public/foundry-and-smelters/aleastur/carousel/2.png";
 import image3 from "@/public/foundry-and-smelters/aleastur/carousel/3.png";
 import ImageCarousel from '@/app/components/ImageCarousel';
-import Table, { TableProps } from '@/app/components/Table';
 
 export default function Aleastur() {
     const images = [
@@ -13,22 +12,6 @@ export default function Aleastur() {
         image3,
     ].map((image) => image.src);
 
-    const tables: TableProps[] = [
-        {
-            title: "Other Master Alloys We Offer",
-            headers: ["AlB", "AlSr", "AlCa", "AlTi", "AlV", "AlZr", "AlCu", "AlFe", "AlMg", "AlMn", "AlNi", "AlSi", "AlZn", "AlSb", "AlCr", "AlBi", "AlCe", "AlC0", "AlWf", "AlGa", "AlHf", "AlIn", "AlLa", "AlM0", "AlSc", "AlTa"],
-            rows: [
-                ["Lead Free (CB12)", "60.0 ~ 63.0", "0.05 ~ 0.10", "0.10Max", "0.10Max", "0.50 ~ 0.70", "0.10Max", "0.01Max", "0.01Max", "0.01Max", "Rem.", "0.01Max", "0.50 ~ 0.75"]
-            ],
-        },
-        {
-            title: "Other Master Alloys We Offer",
-            headers: ["Coils"],
-            rows: [
-                ["Lead Free (CB12)", "60.0 ~ 63.0", "0.05 ~ 0.10", "0.10Max", "0.10Max", "0.50 ~ 0.70", "0.10Max", "0.01Max", "0.01Max", "0.01Max", "Rem.", "0.01Max", "0.50 ~ 0.75"]
-            ],
-        },
-    ];
 
     return (
         <main>
@@ -119,7 +102,7 @@ export default function Aleastur() {
                             <h3 className='text-neutral-white font-bold text-xl'>Supreme™</h3>
                         </div>
                         <p className='text-lg p-4 h-104'>
-                            Supreme™ is ALEASTUR's High Efficiency Grain Refiner, delivering metallographic excellence and superior performance in refining applications.
+                            Supreme™ is ALEASTUR&apos;s High Efficiency Grain Refiner, delivering metallographic excellence and superior performance in refining applications.
                         </p>
                         <div className='h-28 bg-primary-light flex flex-col items-center justify-center p-4 text-md mt-auto'>
                             <h4 className='text-center font-semibold text-primary'>Forms Available</h4>

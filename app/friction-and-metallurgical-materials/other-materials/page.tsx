@@ -134,7 +134,7 @@ export default function OtherMaterials() {
             <section>
                 <div className="px-40 py-20 text-center">
                     <h2 className="mb-4">Ready to Source Reliable Friction Materials?</h2>
-                    <p className="text-lg mb-6">Whether you're optimizing an existing formulation or developing a new one, our team can help you find the right materials for your performance needs. Contact us to discuss tailored solutions and get expert guidance.</p>
+                    <p className="text-lg mb-6">Whether you&apos;re optimizing an existing formulation or developing a new one, our team can help you find the right materials for your performance needs. Contact us to discuss tailored solutions and get expert guidance.</p>
                     <Link href={`/contact`}>
                         <Button bgColor="bg-accent text-neutral-white">Contact us</Button>
                     </Link>
