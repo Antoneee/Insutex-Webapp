@@ -30,9 +30,9 @@ export default function FrictionAndMetallurgical() {
                         <p className="mb-16">
                             We’re the exclusive distributor of {" "}
                             <Link href={`friction-and-metallurgical-materials/graphite-materials`}>
-                                <b className="text-primary">Asbury Carbons</b>
+                                <b className="text-primary">Asbury Carbons </b>
                             </Link>
-                            , a global leader in carbon materials. Their graphite is trusted for high-performance friction and foundry applications.
+                             in Southeast Asia, a global leader in carbon materials. Their graphite is trusted for high-performance friction and foundry applications.
                         </p>
                         <h3 className="text-primary font-semibold text-xl">Types We Offer</h3>
                         <ul className="list-disc list-inside mb-12">

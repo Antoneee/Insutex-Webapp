@@ -17,7 +17,8 @@ export default function Home() {
       <section className="relative">
         <div className="bg-home bg-cover bg-center p-20">
           <div className="relative z-10">
-            <h1 className="mt-20 text-neutral-white">Insutex Industries Sdn. BhD.</h1>
+                      <h1 className="mt-20 text-neutral-white">Insutex Industries Sdn. Bhd.</h1>
+                      <p className="text-3x1 text-neutral-white">Reg No. 200201025174 (592837-P)</p>
             <p className="text-3xl text-neutral-white">Moving Goods, Growing Partnerships</p>
           </div>
           <div className="bg-black/45 w-full h-full absolute inset-0"></div>
