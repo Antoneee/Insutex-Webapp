@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Insutex Industries Sdn. BhD.",
+  title: "Insutex Industries Sdn. Bhd.",
   description: "Moving Goods, Growing Partnerships",
 };
 
