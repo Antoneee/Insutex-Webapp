@@ -67,19 +67,19 @@ export default function Brass() {
                 </div>
             </section>
             <section>
-                <div className="px-20 flex gap-x-20 mb-20">
-                    <div className="w-1/2">
-                        <ImageCarousel images={images} interval={7500}/>
+                <div className="px-4 md:px-20 flex flex-col md:flex-row gap-10 mb-20">
+                    <div className="w-full md:w-1/2 mb-6 md:mb-0">
+                    <ImageCarousel images={images} interval={7500} />
                     </div>
-                    <div className="w-1/2">
-                        <h2 className="mb-3">Brass</h2>
-                        <p className="mb-10">
-                            Brass is a durable and corrosion-resistant metal alloy made primarily of copper and zinc. Known for its excellent machinability, electrical conductivity, and attractive gold-like appearance, brass is widely used in applications such as plumbing fittings, electrical connectors, musical instruments, and decorative hardware. Its resistance to tarnishing and antimicrobial properties make it ideal for sanitary and architectural uses. Whether for industrial, commercial, or artistic purposes, brass remains a highly versatile and reliable material.
-                        </p>
-                        <FormsAvailable forms={["Round Bar", "Flat Bar", "Hex Bar", "Tube/Pipe", "Rod", "Wire", "Ingot"]}/>
+                    <div className="w-full md:w-1/2">
+                    <h2 className="mb-3">Brass</h2>
+                    <p className="mb-10">
+                        Brass is a durable and corrosion-resistant metal alloy made primarily of copper and zinc. Known for its excellent machinability, electrical conductivity, and attractive gold-like appearance, brass is widely used in applications such as plumbing fittings, electrical connectors, musical instruments, and decorative hardware...
+                    </p>
+                    <FormsAvailable forms={["Round Bar", "Flat Bar", "Hex Bar", "Tube/Pipe", "Rod", "Wire", "Ingot"]} />
                     </div>
                 </div>
-            </section>
+                </section>  
             <section>
                 <div className="px-20 mb-20">
                     {tables.map((table, index) => (

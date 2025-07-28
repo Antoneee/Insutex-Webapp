@@ -26,11 +26,14 @@ function Card({img, alt, href, title, items}: CardProps) {
                 <h3 className="uppercase text-primary font-bold">
                     {title}
                 </h3>
-                <ul className="list-disc list-inside">
+                <div className="space-y-1">
                     {items.map((item, i) => (
-                        <li key={i}>{item}</li>
+                        <div key={i} className="flex items-start gap-2">
+                        <span className="text-primary font-bold text-xl leading-none mt-1">•</span>
+                        <span className="text-neutral-black leading-relaxed">{item}</span>
+                        </div>
                     ))}
-                </ul>
+                    </div>
             </div>
                 <Link href={href}>
                     <Button bgColor="bg-primary text-neutral-white block mx-auto">Learn More</Button>

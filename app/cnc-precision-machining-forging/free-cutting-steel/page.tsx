@@ -46,38 +46,36 @@ export default function FreeCuttingSteel() {
     return (
         <main>
             <section>
-                <div className="relative bg-free-cutting-steel bg-cover bg-center p-20 mb-20">
-                    {/* 
-                    Slightly darken background to make heading more readable.
-                    If you want to adjust darkness/brightness change number in "bg-black/<NUMBER>" in div below.
-                    */}
+                <div className="relative bg-free-cutting-steel bg-cover bg-center px-4 py-20 md:px-20 mb-20">
                     <div className="absolute inset-0 bg-black/45 z-0" />
-                    <h1 className="relative text-neutral-white mt-20 z-10">Free Cutting, Alloy, & Carbon Steel</h1>
+                    <h1 className="relative text-white mt-20 z-10 text-2xl md:text-4xl text-center">Free Cutting, Alloy, & Carbon Steel</h1>
                 </div>
-            </section>
-            <section>
-                <div className="px-20 flex gap-x-20 mb-20">
-                    <div className="w-1/2">
-                        <ImageCarousel images={images} interval={7500}/>
+                </section>
+
+                <section>
+                <div className="flex flex-col md:flex-row gap-y-10 md:gap-x-20 px-4 md:px-20 mb-20">
+                    <div className="w-full md:w-1/2">
+                    <ImageCarousel images={images} interval={7500} />
                     </div>
-                    <div className="w-1/2">
-                        <h2 className="mb-3">Free Cutting, Alloy, & Carbon Steel</h2>
-                        <p className="mb-10">
-                            Free-cutting steel, also known as free-machining steel, is a type of carbon steel designed for easy machining with minimal tool wear. It contains additives like sulfur, phosphorus, or lead, which improve its machinability by creating small, breakable chips during cutting. This makes it ideal for precision components in industries such as automotive, electronics, and manufacturing. Common applications include gears, shafts, screws, and fasteners, where high-speed machining and smooth surface finishes are required. Free-cutting steel enhances productivity and efficiency, making it a preferred choice for high-volume production.
-                        </p>
-                        <FormsAvailable forms={["Round Bar", "Flat Bar", "Hex Bar", "Tube/Pipe", "Rod", "Wire"]}/>
+                    <div className="w-full md:w-1/2">
+                    <h2 className="mb-3 text-xl font-semibold">Free Cutting, Alloy, & Carbon Steel</h2>
+                    <p className="mb-10 text-justify">
+                        Free-cutting steel, also known as free-machining steel, is a type of carbon steel designed for easy machining with minimal tool wear...
+                    </p>
+                    <FormsAvailable forms={["Round Bar", "Flat Bar", "Hex Bar", "Tube/Pipe", "Rod", "Wire"]} />
                     </div>
                 </div>
-            </section>
-            <section>
-                <div className="px-20 mb-20">
+                </section>
+
+                <section>
+                <div className="px-4 md:px-20 mb-20">
                     {tables.map((table, index) => (
-                        <div key={index} className="mb-10">
-                            <Table title={table.title} headers={table.headers} rows={table.rows}/>
-                        </div>
+                    <div key={index} className="mb-10">
+                        <Table title={table.title} headers={table.headers} rows={table.rows} />
+                    </div>
                     ))}
                 </div>
-            </section>
+                </section>
         </main>
     );
 }

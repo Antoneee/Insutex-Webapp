@@ -29,23 +29,20 @@ export default function Copper() {
     return (
         <main>
             <section>
-                <div className="relative bg-copper bg-cover bg-center p-20 mb-20">
-                    {/* 
-                    Slightly darken background to make heading more readable.
-                    If you want to adjust darkness/brightness change number in "bg-black/<NUMBER>" in div below.
-                    */}
+                <div className="relative bg-copper bg-cover bg-center p-10 md:p-20 mb-20">
                     <div className="absolute inset-0 bg-black/45 z-0" />
-                    <h1 className="relative text-neutral-white mt-20 z-10">Copper</h1>
+                    <h1 className="relative text-neutral-white mt-10 md:mt-20 z-10 text-3xl md:text-5xl font-bold">Copper</h1>
                 </div>
             </section>
+
             <section>
-                <div className="px-20 flex gap-x-20 mb-20">
-                    <div className="w-1/2">
+                <div className="px-6 md:px-20 flex flex-col md:flex-row gap-y-10 md:gap-x-20 mb-20">
+                    <div className="w-full md:w-1/2">
                         <ImageCarousel images={images} interval={7500}/>
                     </div>
-                    <div className="w-1/2">
-                        <h2 className="mb-3">Copper</h2>
-                        <p className="mb-10">
+                    <div className="w-full md:w-1/2">
+                        <h2 className="mb-3 text-2xl font-semibold">Copper</h2>
+                        <p className="mb-10 text-justify">
                             Copper is a versatile and highly conductive metal known for its excellent electrical and thermal properties. It is widely used in electrical wiring, plumbing, industrial machinery, and construction due to its durability and resistance to corrosion. 
                             Copper rods, in particular, are essential for manufacturing electrical components, grounding systems, and precision engineering applications. Their superior conductivity makes them ideal for power transmission, while their malleability allows for easy shaping and fabrication. Whether for industrial, commercial, or residential use, copper remains a fundamental material across various industries.
                         </p>
@@ -53,8 +50,9 @@ export default function Copper() {
                     </div>
                 </div>
             </section>
+
             <section>
-                <div className="px-20 mb-20">
+                <div className="px-6 md:px-20 mb-20">
                     {tables.map((table, index) => (
                         <div key={index} className="mb-10">
                             <Table title={table.title} headers={table.headers} rows={table.rows}/>

@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <main>
       <section className="relative">
-        <div className="bg-home bg-cover bg-center p-20">
+        <div className="bg-home bg-cover bg-center px-6 py-20 md:px-20">
           <div className="relative z-10">
                       <h1 className="mt-20 text-neutral-white">Insutex Industries Sdn. Bhd.</h1>
                       <p className="text-3x1 text-neutral-white">Reg No. 200201025174 (592837-P)</p>
@@ -25,11 +25,11 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <div className="flex items-center gap-20 p-20">
-          <div className="w-3/5">
+        <div className="flex flex-col-reverse md:flex-row items-center gap-10 md:gap-20 px-6 py-20 md:px-20">
+          <div className="w-full md:w-3/5">
             <Image src={WhoWeAreImage} alt="Who We Are" className="w-full h-auto object-cover"/>
           </div>
-          <div className="w-2/5 text-left">
+          <div className="w-full md:w-2/5 text-left mt-6 md:mt-0">
             <h2 className="uppercase mb-4">Who We Are</h2>
             <p className="text-lg mb-8">As a trusted supplier to industrial sectors, we provide essential materials and equipment for foundry, smelter, machining, and oil & gas industries, supporting projects across Asia.</p>
             <Link href="/about">
@@ -39,9 +39,9 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <div className="bg-primary-light px-40 py-20">
+        <div className="bg-primary-light px-6 py-20 md:px-40">
           <h2 className="uppercase text-center mb-8">Industries We Serve</h2>
-          <div className="grid grid-cols-3 gap-48 text-lg">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-24 text-lg">
             <Link href="/cnc-precision-machining-forging">
               <ImageCaptionItem img={CNCPrecisionMachiningForgingImage} alt="CNC, Precision Machining, Forging" text="CNC, Precision Machining, Forging"/>
             </Link>
@@ -55,9 +55,9 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <div className="p-20">
+        <div className="px-6 py-20 md:px-20">
           <h2 className="uppercase text-center mb-8">Company Services</h2>
-          <div className="grid grid-cols-3 gap-12 text-lg">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 text-lg">
             <IconHeadingTextItem icon={FastServiceIcon} alt="Fast Service" heading="Fast Service" text="We aim to service with consistent delivery and quick response time."/>
             <IconHeadingTextItem icon={AsiaMarketIcon} alt="Asia Market" heading="Asia Market" text="Our market consist of Malaysia, Singapore, Thailand, Indonesia, Yemen, Korea, China, India, etc."/>
             <IconHeadingTextItem icon={DirectAccessIcon} alt="Direct Access" heading="Direct Access" text="Feel free to contact us through email or phone number."/>

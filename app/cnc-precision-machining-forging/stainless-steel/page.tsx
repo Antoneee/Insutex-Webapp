@@ -49,38 +49,36 @@ export default function StainlessSteel() {
     return (
         <main>
             <section>
-                <div className="relative bg-stainless-steel bg-cover bg-center p-20 mb-20">
-                    {/* 
-                    Slightly darken background to make heading more readable.
-                    If you want to adjust darkness/brightness change number in "bg-black/<NUMBER>" in div below.
-                    */}
-                    <div className="absolute inset-0 bg-black/45 z-0" />
-                    <h1 className="relative text-neutral-white mt-20 z-10">Stainless Steel</h1>
+                <div className="relative bg-stainless-steel bg-cover bg-center px-4 py-20 md:px-20 mb-20">
+                <div className="absolute inset-0 bg-black/45 z-0" />
+                <h1 className="relative text-neutral-white z-10 text-2xl md:text-4xl text-center mt-10 md:mt-20">Stainless Steel</h1>
                 </div>
             </section>
+
             <section>
-                <div className="px-20 flex gap-x-20 mb-20">
-                    <div className="w-1/2">
-                        <ImageCarousel images={images} interval={7500}/>
-                    </div>
-                    <div className="w-1/2">
-                        <h2 className="mb-3">Stainless Steel</h2>
-                        <p className="mb-10">
-                            Stainless steel is a strong, corrosion-resistant metal alloy composed primarily of iron, chromium, and other elements like nickel and molybdenum. Its resistance to rust, staining, and extreme temperatures makes it ideal for a wide range of applications, including construction, automotive, medical instruments, kitchenware, and industrial machinery. Stainless steel is valued for its durability, low maintenance, and hygienic properties, making it a preferred choice in both structural and decorative applications.
-                        </p>
-                        <FormsAvailable forms={["Round Bar", "Flat Bar", "Hex Bar", "Tube/Pipe", "Rod", "Wire"]}/>
-                    </div>
+                <div className="flex flex-col md:flex-row gap-y-10 md:gap-x-20 px-4 md:px-20 mb-20">
+                <div className="w-full md:w-1/2">
+                    <ImageCarousel images={images} interval={7500} />
+                </div>
+                <div className="w-full md:w-1/2">
+                    <h2 className="mb-3 text-xl md:text-2xl font-semibold">Stainless Steel</h2>
+                    <p className="mb-10 text-justify">
+                    Stainless steel is a strong, corrosion-resistant metal alloy composed primarily of iron, chromium, and other elements like nickel and molybdenum...
+                    </p>
+                    <FormsAvailable forms={["Round Bar", "Flat Bar", "Hex Bar", "Tube/Pipe", "Rod", "Wire"]} />
+                </div>
                 </div>
             </section>
+
             <section>
-                <div className="px-20 mb-20">
-                    {tables.map((table, index) => (
-                        <div key={index} className="mb-10">
-                            <Table title={table.title} headers={table.headers} rows={table.rows}/>
-                        </div>
-                    ))}
+                <div className="px-4 md:px-20 mb-20">
+                {tables.map((table, index) => (
+                    <div key={index} className="mb-10">
+                    <Table title={table.title} headers={table.headers} rows={table.rows} />
+                    </div>
+                ))}
                 </div>
             </section>
-        </main>
+            </main>
     );
 }
