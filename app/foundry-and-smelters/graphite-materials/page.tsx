@@ -75,10 +75,10 @@ export default function GraphiteMaterials() {
                     <h2 className="mb-6 md:mb-8 text-2xl md:text-3xl">Insutex Industries Sdn. Bhd. – Your Trusted Partner in South-East Asia</h2>
                     <div className="text-base md:text-lg">
                         <p>
-                            For over 20 years, Insutex Industries Sdn. Bhd. has proudly represented Asbury Carbons as its official agent in Malaysia and the surrounding region. With deep industry knowledge and a strong commitment to service, Insutex acts as the bridge between Asbury's global expertise and the local market's unique needs. We provide comprehensive solutions for customers in the friction, foundry, metallurgy, and other industrial sectors, offering top-quality materials backed by reliable technical support and responsive customer service.
-                            <br/>
-                            <br/>
-                            Together, Asbury and Insutex deliver world-class materials, technical innovation, and dependable support — helping you drive performance, reliability, and excellence in your applications.
+                            {"For over 20 years, Insutex Industries Sdn. Bhd. has proudly represented Asbury Carbons as its official agent in Malaysia and the surrounding region. With deep industry knowledge and a strong commitment to service, Insutex acts as the bridge between Asbury's global expertise and the local market's unique needs. We provide comprehensive solutions for customers in the friction, foundry, metallurgy, and other industrial sectors, offering top-quality materials backed by reliable technical support and responsive customer service."}
+                            <br />
+                            <br />
+                            {"Together, Asbury and Insutex deliver world-class materials, technical innovation, and dependable support — helping you drive performance, reliability, and excellence in your applications."}
                         </p>
                     </div>
                 </div>
