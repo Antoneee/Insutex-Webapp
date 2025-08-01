@@ -6,6 +6,7 @@ import image3 from "@/public/cnc-precision-machining-forging/brass/carousel/3.pn
 import image4 from "@/public/cnc-precision-machining-forging/brass/carousel/4.png";
 import image5 from "@/public/cnc-precision-machining-forging/brass/carousel/5.png";
 import Table, { TableProps } from "@/app/components/Table";
+import Link from "next/link";
 
 export default function Brass() {
     const images = [
@@ -57,13 +58,29 @@ export default function Brass() {
     return (
         <main>
             <section>
-                <div className="relative bg-brass bg-cover bg-center p-20 mb-20">
+                <div className="relative bg-brass bg-cover bg-center py-32 md:py-52 min-h-[400px] px-10 md:px-20 mb-20">
                     {/* 
                     Slightly darken background to make heading more readable.
                     If you want to adjust darkness/brightness change number in "bg-black/<NUMBER>" in div below.
                     */}
                     <div className="absolute inset-0 bg-black/45 z-0" />
                     <h1 className="relative text-neutral-white mt-20 z-10">Brass</h1>
+                    <p className="relative z-10 text-base md:text-xl text-neutral-white">
+                    <Link href="/" className="hover:underline">
+                        Insutex Industries
+                    </Link>
+                    {" "}
+                    &rarr;
+                    {" "}
+                    <Link href="/cnc-precision-machining-forging" className="hover:underline">
+                        CNC, Precision Machining, Forging
+                    </Link>
+                    &rarr;
+                    {" "}
+                    <Link href="/cnc-precision-machining-forging/brass" className="hover:underline">
+                        Brass
+                    </Link>
+                    </p>
                 </div>
             </section>
             <section>

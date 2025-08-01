@@ -6,6 +6,7 @@ import image3 from "@/public/cnc-precision-machining-forging/stainless-steel/car
 import image4 from "@/public/cnc-precision-machining-forging/stainless-steel/carousel/4.png";
 import image5 from "@/public/cnc-precision-machining-forging/stainless-steel/carousel/5.png";
 import Table, { TableProps } from "@/app/components/Table";
+import Link from "next/link";
 
 export default function StainlessSteel() {
     const images = [
@@ -49,9 +50,25 @@ export default function StainlessSteel() {
     return (
         <main>
             <section>
-                <div className="relative bg-stainless-steel bg-cover bg-center px-4 py-20 md:px-20 mb-20">
+                <div className="relative bg-stainless-steel bg-cover bg-center py-32 md:py-52 min-h-[400px] px-10 md:px-20 mb-20">
                 <div className="absolute inset-0 bg-black/45 z-0" />
-                <h1 className="relative text-neutral-white z-10 text-2xl md:text-4xl text-center mt-10 md:mt-20">Stainless Steel</h1>
+                <h1 className="relative text-neutral-white mt-20 z-10">Stainless Steel</h1>
+                <p className="relative z-10 text-base md:text-xl text-neutral-white">
+                    <Link href="/" className="hover:underline">
+                        Insutex Industries
+                    </Link>
+                    {" "}
+                    &rarr;
+                    {" "}
+                    <Link href="/cnc-precision-machining-forging" className="hover:underline">
+                        CNC, Precision Machining, Forging
+                    </Link>
+                    &rarr;
+                    {" "}
+                    <Link href="/cnc-precision-machining-forging/stainless-steel" className="hover:underline">
+                        Stainless Steel
+                    </Link>
+                    </p>
                 </div>
             </section>
 

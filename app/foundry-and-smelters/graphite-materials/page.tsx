@@ -42,12 +42,12 @@ export default function GraphiteMaterials() {
                     {" "}
                     &rarr;
                     {" "}
-                    <Link href="/friction-and-metallurgical-materials" className="hover:underline">
-                        Friction and Metallurgical Materials
+                    <Link href="/foundry-and-smelters" className="hover:underline">
+                        Foundry and Smelters
                     </Link>
                     &rarr;
                     {" "}
-                    <Link href="/friction-and-metallurgical-materials/graphite-materials" className="hover:underline">
+                    <Link href="/foundry-and-smelters/graphite-materials" className="hover:underline">
                         Graphite Materials
                     </Link>
                     </p>

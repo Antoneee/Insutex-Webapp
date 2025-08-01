@@ -40,9 +40,17 @@ export default function CNCPrecisionMachiningForging() {
       <section>
         <div className="bg-primary-light bg-cover bg-center px-6 py-20 md:px-20">
           <h1 className="text-primary mt-10 md:mt-20">CNC, Precision Machining, Forging</h1>
-          <p className="text-2xl md:text-3xl text-neutral-black">
-            Moving Goods, Growing Partnerships
-          </p>
+          <p className="text-base md:text-xl text-neutral-black">
+                    <Link href="/" className="hover:underline text-primary">
+                        Insutex Industries
+                    </Link>
+                    {" "}
+                    &rarr;
+                    {" "}
+                    <Link href="/cnc-precision-machining-forging" className="hover:underline text-primary">
+                        CNC, Precision Machining, Forging
+                    </Link>
+                    </p>
         </div>
       </section>
 
