@@ -6,6 +6,7 @@ import image3 from "@/public/friction-and-metallurgical-materials/other-material
 import image4 from "@/public/friction-and-metallurgical-materials/other-materials/carousel/4.png";
 import image5 from "@/public/friction-and-metallurgical-materials/other-materials/carousel/5.png";
 import Link from "next/link";
+import Head from "next/head";
 
 type HeadingBulletedListProps = {
     heading: string;
@@ -35,6 +36,13 @@ export default function OtherMaterials() {
     ].map(image => image.src)
 
     return (
+        <>
+        <Head>
+            <title>Friction & Metallurgical Materials Supplier Malaysia | Insutex Industries</title>
+            <meta name="description" content="Insutex Industries supplies high-performance friction and metallurgical materials across Malaysia including antimony, phenolic resin, brass powder, and more." />
+            <meta name="keywords" content="friction materials malaysia, metallurgical materials supplier, antimony powder malaysia, phenolic resin supplier, brass powder malaysia, foundry additives malaysia, Insutex Industries" />
+            <link rel="canonical" href="https://www.yourdomain.com/friction-and-metallurgical-materials/other-materials" />
+        </Head>
         <main>
             {/* Hero Section*/}
             <section className="relative">
@@ -171,6 +179,6 @@ export default function OtherMaterials() {
                     </Link>
                 </div>
             </section>
-        </main>
+        </main></>
     )
 }

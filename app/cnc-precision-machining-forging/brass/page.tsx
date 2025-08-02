@@ -7,6 +7,7 @@ import image4 from "@/public/cnc-precision-machining-forging/brass/carousel/4.pn
 import image5 from "@/public/cnc-precision-machining-forging/brass/carousel/5.png";
 import Table, { TableProps } from "@/app/components/Table";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function Brass() {
     const images = [
@@ -55,7 +56,13 @@ export default function Brass() {
         }
     ]
 
-    return (
+    return (<>
+        <Head>
+        <title>Brass Rod Supplier Malaysia | Insutex Industries</title>
+        <meta name="description" content="Insutex Industries is a trusted supplier of brass rods, bars, and precision-forged components in Malaysia. Contact us for round, hex, and flat brass products." />
+        <meta name="keywords" content="brass rod supplier malaysia, brass bar malaysia, buy brass rods, cnc brass parts malaysia, brass forging malaysia, brass round hex flat bar, brass rods near me" />
+        <link rel="canonical" href="https://www.insutex.mym/cnc-precision-machining-forging/brass" />
+        </Head>
         <main>
             <section>
                 <div className="relative bg-brass bg-cover bg-center py-32 md:py-52 min-h-[400px] px-10 md:px-20 mb-20">
@@ -83,6 +90,7 @@ export default function Brass() {
                     </p>
                 </div>
             </section>
+            
             <section>
                 <div className="px-4 md:px-20 flex flex-col md:flex-row gap-10 mb-20">
                     <div className="w-full md:w-1/2 mb-6 md:mb-0">
@@ -92,6 +100,9 @@ export default function Brass() {
                     <h2 className="mb-3">Brass</h2>
                     <p className="mb-10">
                         Brass is a durable and corrosion-resistant metal alloy made primarily of copper and zinc. Known for its excellent machinability, electrical conductivity, and attractive gold-like appearance, brass is widely used in applications such as plumbing fittings, electrical connectors, musical instruments, and decorative hardware...
+                    </p>
+                    <p className="mb-10">
+                        Looking for a reliable <strong>brass rod supplier in Malaysia</strong>? At Insutex Industries, we provide a wide range of high-quality brass bars and forged brass components to meet your manufacturing and machining needs. Our offerings include round bars, hex bars, flat bars, and more — all available in standard and custom sizes.
                     </p>
                     <FormsAvailable forms={["Round Bar", "Flat Bar", "Hex Bar", "Tube/Pipe", "Rod", "Wire", "Ingot"]} />
                     </div>
@@ -107,5 +118,6 @@ export default function Brass() {
                 </div>
             </section>
         </main>
+        </>
     );
 }

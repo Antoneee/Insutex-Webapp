@@ -5,6 +5,7 @@ import image2 from "@/public/foundry-and-smelters/aleastur/carousel/2.png";
 import image3 from "@/public/foundry-and-smelters/aleastur/carousel/3.png";
 import ImageCarousel from '@/app/components/ImageCarousel';
 import Link from "next/link";
+import Head from "next/head";
 
 export default function Aleastur() {
     const images = [
@@ -13,8 +14,19 @@ export default function Aleastur() {
         image3,
     ].map((image) => image.src);
 
-    return (
+    return (<>
         <main>
+            <Head>
+            <title>Master Alloy & Aluminium Grain Refiner Supplier Malaysia | Insutex Industries</title>
+            <meta name="description" content="Insutex Industries partners with Aleastur to supply high-performance aluminium master alloys and grain refiners like AlTiB, AlTiC, 006 Ultimate™, and Supreme™ across Malaysia and Asia." />
+            <meta name="keywords" content="grain refiner malaysia, aluminium master alloy supplier, AlTiB AlSr Malaysia, AlSr Stock in malaysia, aluminium grain refining malaysia, AlTiB coil stick waffle" />
+            <link rel="canonical" href="https://www.insutex.my/foundry-and-smelters/aleastur" />
+            <meta property="og:title" content="Aluminium Grain Refiner & Master Alloy Supplier Malaysia" />
+            <meta property="og:description" content="Trusted supplier of aluminium master alloys and grain refiners from Aleastur. Discover AlTiB, AlTiC, and advanced alloys for smelting and casting." />
+            <meta property="og:url" content="https://www.insutex.my/foundry-and-smelters/aleastur" />
+            <meta property="og:type" content="website" />
+            <meta property="og:image" content="https://www.insutex.my/og/aleastur-grain-refiner.jpg" />
+            </Head>
             {/* Hero Section */}
             <section className="relative">
                 <div className="relative bg-aleastur bg-cover bg-center py-32 md:py-52 min-h-[400px] px-10 md:px-20 mb-20">
@@ -183,6 +195,6 @@ export default function Aleastur() {
                     </div>
                 </div>
             </section>
-        </main>
+        </main></>
     )
 }

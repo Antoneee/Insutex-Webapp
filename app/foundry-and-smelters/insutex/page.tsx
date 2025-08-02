@@ -4,9 +4,42 @@ import CoatingImage from "@/public/foundry-and-smelters/insutex/coating.png";
 import FoundryFluxesImage from "@/public/foundry-and-smelters/insutex/foundry-fluxes.png";
 import MagnesiumIngotsImage from "@/public/foundry-and-smelters/insutex/magnesium-ingots.png";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function Insutex() {
-  return (
+  return (<>
+    <Head>
+      <title>Aluminium Smelter Consumables Malaysia | Insutex Industries</title>
+      <meta
+        name="description"
+        content="Insutex Industries supplies aluminium smelter consumables in Malaysia including mouldables, protective coatings, fluxes, and magnesium ingots. Improve casting quality and process efficiency."
+      />
+      <meta
+        name="keywords"
+        content="aluminium smelter consumables malaysia, foundry flux supplier, mouldable supplier in malaysia, magnesium ingots supplier in malaysia, protective coating smelter, aluminium coating supplier, aluminium flux stockist, insulation paste foundry"
+      />
+      <link
+        rel="canonical"
+        href="https://www.insutex.my/foundry-and-smelters/insutex"
+      />
+      <meta
+        property="og:title"
+        content="Aluminium Smelter Consumables Malaysia | Insutex Industries"
+      />
+      <meta
+        property="og:description"
+        content="Leading supplier of smelter consumables in Malaysia: fluxes, coatings, mouldables, and magnesium ingots for aluminium production."
+      />
+      <meta
+        property="og:url"
+        content="https://www.insutex.my/foundry-and-smelters/insutex"
+      />
+      <meta property="og:type" content="website" />
+      <meta
+        property="og:image"
+        content="https://www.insutex.my/og/aluminium-smelter-consumables.jpg"
+      />
+    </Head>
     <main>
       <section className="relative">
         <div className="relative bg-insutex bg-cover bg-center py-32 md:py-52 min-h-[400px] px-10 md:px-20 mb-20">
@@ -169,5 +202,6 @@ export default function Insutex() {
         </div>
       </section>
     </main>
+    </>
   );
 }

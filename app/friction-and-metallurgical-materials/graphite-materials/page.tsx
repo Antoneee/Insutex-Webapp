@@ -2,6 +2,7 @@ import Image from "next/image";
 import AsburyLogo from '@/public/friction-and-metallurgical-materials/graphite-materials/asbury-logo.png';
 import Link from "next/link";
 import Button from "@/app/components/Button";
+import Head from "next/head";
 
 type HeadingCheckListProps = {
     heading: string;
@@ -29,6 +30,22 @@ function HeadingCheckList({heading, items}: HeadingCheckListProps) {
 
 export default function GraphiteMaterials() {
     return (
+    <>
+        <Head>
+        <title>Graphite Supplier Malaysia | Friction & Metallurgical Materials | Insutex</title>
+        <meta
+            name="description"
+            content="Insutex Industries is the trusted supplier of graphite materials in Malaysia. We provide graphite for friction, foundry, battery, lubrication, and metallurgical applications."
+        />
+        <meta
+            name="keywords"
+            content="graphite supplier malaysia, graphite materials malaysia, friction materials graphite, battery graphite, industrial carbon, foundry graphite, Asbury graphite Malaysia"
+        />
+        <link
+            rel="canonical"
+            href="https://www.insutex.my/friction-and-metallurgical-materials/graphite-materials"
+        />
+        </Head>
         <main>
             {/* Hero Section */}
             <section className="relative">
@@ -75,7 +92,7 @@ export default function GraphiteMaterials() {
                     <h2 className="mb-6 md:mb-8 text-2xl md:text-3xl">Insutex Industries Sdn. Bhd. – Your Trusted Partner in South-East Asia</h2>
                     <div className="text-base md:text-lg">
                         <p>
-                            {"For over 20 years, Insutex Industries Sdn. Bhd. has proudly represented Asbury Carbons as its official agent in Malaysia and the surrounding region. With deep industry knowledge and a strong commitment to service, Insutex acts as the bridge between Asbury's global expertise and the local market's unique needs. We provide comprehensive solutions for customers in the friction, foundry, metallurgy, and other industrial sectors, offering top-quality materials backed by reliable technical support and responsive customer service."}
+                            {"Insutex Industries is a leading supplier of graphite materials in Malaysia, offering high-quality graphite for use in friction products, foundries, batteries, and industrial manufacturing. As the official agent of Asbury Carbons, we deliver consistent carbon solutions tailored to the demanding needs of Southeast Asia’s industries. For over 20 years, Insutex Industries Sdn. Bhd. has proudly represented Asbury Carbons as its official agent in Malaysia and the surrounding region. With deep industry knowledge and a strong commitment to service, Insutex acts as the bridge between Asbury's global expertise and the local market's unique needs. We provide comprehensive solutions for customers in the friction, foundry, metallurgy, and other industrial sectors, offering top-quality materials backed by reliable technical support and responsive customer service."}
                             <br />
                             <br />
                             {"Together, Asbury and Insutex deliver world-class materials, technical innovation, and dependable support — helping you drive performance, reliability, and excellence in your applications."}
@@ -143,5 +160,6 @@ export default function GraphiteMaterials() {
                 </div>
             </section>
         </main>
+        </>
     )
 }
